@@ -12,7 +12,7 @@ function PostList({posts}: PostListProps) {
       {
         posts.map((post)=>(
           <h2 key={post.id}
-          ><Link href="/">{iteration += 1}. {post.title}</Link></h2>
+          ><Link href={`/posts/${post.id}`}>{iteration += 1}. {post.title}</Link></h2>
         ))
       }
     </div> 

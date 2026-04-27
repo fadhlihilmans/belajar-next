@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import ThemeSwitcher from "./ThemeSwitcher"
 
 function Header() {
   return (
@@ -15,7 +16,9 @@ function Header() {
           <div className="nav-links">
             <Link href="/">Home</Link>          
             <Link href="about">About</Link>          
+            <Link href="posts">Posts</Link>          
           </div>
+          <ThemeSwitcher />
         </nav>
     </header>
   )
